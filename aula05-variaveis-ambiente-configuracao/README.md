@@ -132,4 +132,4 @@ node_modules/
 
 ## Licença
 
-Projeto criado para fins educacionais.
+Projeto criado para fins educacionais. 
