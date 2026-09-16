@@ -236,3 +236,4 @@ npm run start:prod
 Aula 07 — Fundamentos NestJS
 
 Projeto destinado ao aprendizado e prática dos conceitos fundamentais do framework NestJS.
+
