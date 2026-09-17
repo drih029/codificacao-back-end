@@ -223,4 +223,4 @@ O projeto utiliza o arquivo .env para configurações de ambiente. Certifique-se
 Snippet de código
 PORT=3000
 NODE_ENV=development
-Nota: Arquivos de ambiente como .env, .env.local e .env.production.local estão ignorados no .gitignore por razões de segurança.
+Nota: Arquivos de ambiente como .env, .env.local e .env.production.local estão ignorados no .gitignore por razões de segurança. 
