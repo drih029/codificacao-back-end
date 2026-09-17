@@ -116,3 +116,111 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+Você quis dizer para complementar e expandir o README.md com uma documentação completa do projeto?
+
+Aqui está a versão completa, incluindo estrutura de diretórios, Scripts do package.json, suporte a variáveis de ambiente (.env) e instruções de deploy.
+
+🚀 API NestJS - Aula 07
+Uma API REST resiliente e modular construída com o framework NestJS, TypeScript e suporte a Jest para testes unitários. O projeto simula uma arquitetura escalável com rotas prefixadas e serviços injetáveis.
+
+📌 Tabela de Conteúdos
+Sobre o Projeto
+
+Tecnologias Utilizadas
+
+Estrutura de Pastas
+
+Rotas da Aplicação
+
+Como Executar
+
+Executando Testes
+
+Variáveis de Ambiente
+
+ℹ️ Sobre o Projeto
+O objetivo deste projeto é disponibilizar uma estrutura básica NestJS demonstrando a separação de responsabilidades entre Controllers (camada de entrada HTTP) e Services (regras de negócio), cobrindo a rota com testes unitários automatizados.
+
+🛠️ Tecnologias Utilizadas
+Runtime: Node.js
+
+Framework: NestJS
+
+Linguagem: TypeScript
+
+Testes: Jest
+
+Compilação: SWC / TSC
+
+📂 Estrutura de Pastas
+Plaintext
+.
+├── src/
+│   ├── app.controller.js      # Controller responsável por mapear as rotas da API
+│   ├── app.service.js         # Service com as regras de negócio e retornos de dados
+│   └── app.controller.spec.js # Arquivo de testes unitários do Controller
+├── .gitignore                 # Arquivos e pastas ignorados pelo Git
+├── package.json               # Gerenciador de dependências e scripts do projeto
+└── README.md                  # Documentação do projeto
+🛣️ Rotas da Aplicação
+GET /api
+Retorna o status atual do servidor.
+
+URL: http://localhost:3000/api
+
+Método: GET
+
+Resposta de Sucesso (200 OK):
+
+Plaintext
+Servidor Nest.Js -Aula 07 Ativo!
+⚙️ Como Executar
+Pré-requisitos
+Node.js (v18 ou superior)
+
+npm, yarn ou pnpm
+
+Passos
+Clonar o repositório:
+
+Bash
+git clone <URL_DO_SEU_REPOSITORIO>
+cd <NOME_DA_PASTA>
+Instalar as dependências:
+
+Bash
+npm install
+Executar a aplicação:
+
+Modo Desenvolvimento (com auto-reload):
+
+Bash
+npm run start:dev
+Modo Produção:
+
+Bash
+npm run build
+npm run start:prod
+🧪 Executando Testes
+Para garantir o bom funcionamento do endpoint e suas dependências:
+
+Rodar os testes unitários:
+
+Bash
+npm run test
+Rodar os testes em modo watch (desenvolvimento):
+
+Bash
+npm run test:watch
+Gerar relatório de cobertura (coverage):
+
+Bash
+npm run test:cov
+🔐 Variáveis de Ambiente
+O projeto utiliza o arquivo .env para configurações de ambiente. Certifique-se de criar um arquivo .env na raiz do projeto baseado na seguinte estrutura:
+
+Snippet de código
+PORT=3000
+NODE_ENV=development
+Nota: Arquivos de ambiente como .env, .env.local e .env.production.local estão ignorados no .gitignore por razões de segurança.
