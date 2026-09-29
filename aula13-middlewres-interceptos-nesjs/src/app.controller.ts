@@ -11,7 +11,7 @@ export class AppController {
     }
 
   }
-  @Get()
+  @Get('/admin')
   getAdmin(){
     return {
       message: 'Bem-vindo ao Painel Admnistrativo!',

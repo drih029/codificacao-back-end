@@ -6,7 +6,7 @@ export class LoggerMiddleware implements NestMiddleware {
   use(req: Request, res: Response, next: NextFunction) {
     console.log(`[LOG] Método: ${req.method} | Rota: ${req.path}`);
 
-    if(req.path.startsWith('/admin')){
+    if(req.path.startsWith('')){
       const role =req.headers['x-user-role'];
       if(role !== 'supervisor'){
         return res.status(403).json({
@@ -16,6 +16,6 @@ export class LoggerMiddleware implements NestMiddleware {
         });
       }
     }
-    next();  
+    next();   
   }
 }
