@@ -1,6 +1,6 @@
 import { Controller, Post, Body } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
-import { CreateProdutoDto } from './create-produto.dto.js';
+import { CreateProdutoDto } from './dto/create-produto.dto.js';
 @ApiTags('produtos')
 @Controller('produtos')
 export class ProdutosController {
