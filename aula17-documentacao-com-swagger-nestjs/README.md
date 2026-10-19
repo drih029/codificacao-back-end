@@ -1,85 +1,108 @@
-Aula 17 — Documentação com Swagger e NestJS
-📋 Sobre o projeto
+Aula 17 — Documentação com Swagger no NestJS
 
-Este projeto foi desenvolvido durante a Aula 17, com o objetivo de aprender a documentar APIs REST utilizando Swagger em uma aplicação desenvolvida com NestJS e TypeScript.
-
-O Swagger permite visualizar e explorar os endpoints da API por meio de uma interface interativa, facilitando o entendimento e os testes das requisições HTTP.
+Projeto desenvolvido durante a Aula 17, com foco na documentação de uma API REST utilizando NestJS, Swagger e OpenAPI.
 
 🚀 Tecnologias utilizadas
 Node.js
 NestJS
 TypeScript
-Swagger
-NestJS Swagger
-npm
-Vitest para testes automatizados
-📁 Estrutura do projeto
-aula17-documentacao-com-swagger-nestjs/
-├── src/
-│   ├── app.controller.spec.ts
-│   ├── app.controller.ts
-│   ├── app.module.ts
-│   ├── app.service.ts
-│   └── main.ts
-├── test/
-│   └── app.e2e-spec.ts
-├── package.json
-├── tsconfig.json
-└── README.md
+Swagger / OpenAPI
+Postman
+📋 Objetivos da aula
+Configurar a documentação OpenAPI no NestJS.
+Documentar endpoints utilizando decorators do Swagger.
+Descrever os dados de entrada com DTOs.
+Testar requisições HTTP utilizando o Postman.
+Disponibilizar uma interface interativa para consulta e teste da API.
+⚙️ Instalação
 
-⚙️ Como executar o projeto
-1. Pré-requisitos
+Clone o repositório e acesse a pasta do projeto:
 
-Certifique-se de ter instalado:
+git clone URL_DO_SEU_REPOSITORIO
+cd NOME_DA_PASTA
 
-Node.js
-npm
-Git (opcional)
-2. Instale as dependências
+
+Instale as dependências:
+
 npm install
 
-3. Execute a aplicação
+
+Caso as dependências do Swagger ainda não estejam instaladas:
+
+npm install @nestjs/swagger
+
+▶️ Executando o projeto
+
+Inicie a aplicação em modo de desenvolvimento:
+
 npm run start:dev
 
 
-Por padrão, aplicações NestJS utilizam a porta 3000, salvo configuração diferente no projeto.
+Por padrão, a API utiliza a porta 3000.
 
-📚 Documentação com Swagger
+📚 Documentação Swagger
 
-Após iniciar a aplicação, acesse a rota de documentação configurada no projeto. Em aplicações NestJS, um endereço comum é:
+Com o servidor em execução, acesse:
 
-http://localhost:3000/api
+http://localhost:3000/docs
+
+A interface Swagger permite visualizar os endpoints, consultar exemplos de requisição e testar as operações disponíveis.
+
+🔗 Endpoints
+Método	Rota	Descrição
+GET	/status	Consulta o status da API
+POST	/produtos	Cadastra um produto
+GET	/docs	Exibe a documentação Swagger no navegador
+📦 Exemplo de cadastro de produto
+
+Método: POST
+
+URL: http://localhost:3000/produtos
+
+Body — JSON:
+
+{
+  "nome": "Arroz 5kg",
+  "preco": 25.90,
+  "categoria": "Alimentos"
+}
+
+Resposta esperada
+
+Status: 201 Created
+
+{
+  "id": 101,
+  "nome": "Arroz 5kg",
+  "preco": 25.9,
+  "categoria": "Alimentos",
+  "criadoEm": "2026-10-19T12:00:00.000Z"
+}
 
 
-Observação: o endereço /api é apenas um exemplo. A rota correta depende da configuração do Swagger no arquivo src/main.ts.
+O identificador é fixo no exemplo atual, e a data de criação é gerada automaticamente. Os dados ainda não são persistidos em um banco de dados.
 
-A interface do Swagger permite visualizar os endpoints documentados e testar as requisições diretamente pelo navegador.
+🧪 Testando com Postman
+Inicie a aplicação.
+Crie uma requisição POST.
+Informe http://localhost:3000/produtos.
+Selecione Body → raw → JSON.
+Insira o JSON de exemplo.
+Clique em Send e verifique a resposta.
+📌 Conceitos praticados
+Controllers e rotas HTTP.
+DTOs (Data Transfer Objects).
+Decorators do NestJS.
+ApiProperty, ApiTags, ApiOperation e ApiResponse.
+Configuração da documentação OpenAPI com DocumentBuilder e SwaggerModule.
+🔮 Melhorias futuras
+Implementar persistência em banco de dados.
+Criar operações para listar, consultar, atualizar e excluir produtos.
+Adicionar validação dos dados de entrada.
+Implementar autenticação e autorização.
+Desenvolver testes automatizados.
 
-🧪 Testes
+Curso: Desenvolvimento Back-End
+Aula: 17 — Documentação com Swagger no NestJS
 
-Para executar os testes unitários:
-
-npm run test
-
-
-Para executar os testes end-to-end:
-
-npm run test:e2e
-
-
-Os comandos disponíveis dependem dos scripts definidos no package.json.
-
-🎯 Conteúdos praticados
-Introdução à documentação de APIs REST.
-Integração do Swagger com NestJS.
-Documentação de endpoints HTTP.
-Exploração e teste de requisições pela interface Swagger.
-Organização de aplicações backend.
-Testes automatizados.
-📌 Objetivo de aprendizagem
-
-Aprender a documentar APIs REST de maneira clara e interativa, facilitando o desenvolvimento, os testes e a integração entre aplicações e equipes.
-
-👨‍💻 Autor
-
-Desenvolvido como atividade prática de estudos em desenvolvimento backend com NestJS, TypeScript e Swagger.
+Projeto desenvolvido para fins educacionais.
