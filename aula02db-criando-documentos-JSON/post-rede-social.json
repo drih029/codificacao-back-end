@@ -1,0 +1,24 @@
+{
+    "texto":"Hoje o dia está radiante!",
+    "autor":"@Rebeca_Silva",
+    "data":"2026-10-20",
+    "curtidas":[
+        "Pedrinho_567",
+        "Vitoria_45",
+        "Carla_dias"
+    ],
+    "comentarios":[
+        {
+            "autor":"Pedrinho_567",
+            "texto":"Que legal,bom dia amiga!"
+        },
+        {
+            "autor":"Vitoria_45",
+            "texto":"Tá perfeito para tomar um belo café da manhã!"
+        },
+        {
+            "autor":"Carla_dias",
+            "texto":"Concordo, bom pra lavar um roupa kkkkkkkkkkk"
+        }
+    ]
+}
