@@ -105,4 +105,4 @@ Desenvolver testes automatizados.
 Curso: Desenvolvimento Back-End
 Aula: 17 — Documentação com Swagger no NestJS
 
-Projeto desenvolvido para fins educacionais.
+Projeto desenvolvido para fins educacionais.                                                                                                                               
