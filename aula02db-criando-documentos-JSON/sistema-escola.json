@@ -1,0 +1,38 @@
+{
+    "sistema":"Sistema Escolar",
+    "descrição":"Organiza dados de alunos,professores, disciplinas e notas",
+    "entidadesChaves":[
+        "ALunos",
+        "Professores",
+        "Disciplinas"
+    ],
+    "colecoes":{
+        "alunos":{
+            "campos":[
+                "nome",
+                "matricula",
+                "dataNascimento",
+                "email",
+                "disciplinas"
+            ]
+        },
+        "professores":{
+            "campos":[
+                "nome",
+                "email",
+                "matriculaFuncinal",
+                "disciplinas"
+            ]
+        },
+        "Disciplinas":{
+            "campos":[
+                "nome",
+                "cargaHoraria",
+                "turma",
+                "professor",
+                "notasAlunos"
+            ]
+        },
+        "justificativa": "A separação em coleções evita a duplicação de dados, economiza esoaço e facilita as consultas por meio de referências aos IDs"
+    }
+}
