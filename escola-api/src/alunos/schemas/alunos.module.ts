@@ -12,4 +12,4 @@ import { Aluno, AlunoSchema } from "../aluno.schema.js";
     providers:[AlunoService],
 })
 
-export class AppModule {}
+export class AlunosModule {}
